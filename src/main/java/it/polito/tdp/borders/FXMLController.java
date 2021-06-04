@@ -28,6 +28,20 @@ public class FXMLController {
 
     @FXML
     void doCalcolaConfini(ActionEvent event) {
+    	
+    	String anno = txtAnno.getText() ;
+    	
+    	try {
+    		
+    		Integer year = Integer.parseInt(anno) ;
+    	
+			
+		} catch (NumberFormatException nfe) {
+			System.err.println("FORMATO ANNO INSERITO ERRATO!!!");
+		}
+    	catch (RuntimeException rte) {
+			System.err.println("ERRORE CON IL DB!!");
+		}
 
     }
 
